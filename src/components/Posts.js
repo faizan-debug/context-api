@@ -18,7 +18,7 @@ const Posts = () => {
         <h2>All Posts</h2>
         <ul>
             {
-                posts.map((post, index) => <PostItem key={index} post={post}/>)
+                posts.map((post, index) => <PostItem key={index} post={post} index={index}/>)
             }
         </ul>
       

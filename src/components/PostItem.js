@@ -1,14 +1,17 @@
 import React from 'react'
 
-const PostItem = ({post: {title, body}}) => {
+const PostItem = ({post: {title, body}, index}) => {
+    
   return (
+    
     <li>
-        <div>
-            <h3>{title}</h3>
-            <p>{body}</p>
-        </div>
+     <h3>{index + 1}. {title}</h3>
+     <p>{body}</p>
+      
     </li>
   )
+  
 }
+
 
 export default PostItem
